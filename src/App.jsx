@@ -84,7 +84,7 @@ export default function VoxifyWebsite() {
           </h1>
 
           <p style={{ color: "#aaa", marginTop: "20px", fontSize: "18px" }}>
-            Voz profunda y profesional. Español e inglés. Entrega en 24h.
+            Dale personalidad y calidad profesional a cada palabra.
           </p>
 
           <motion.button
@@ -162,14 +162,30 @@ export default function VoxifyWebsite() {
           }}>
             <div style={audioBox}>
               <h3>Español</h3>
-              <audio controls style={{ width: "100%" }}>
+              <audio
+  controls
+  style={{
+    width: "100%",
+    filter: "invert(1) hue-rotate(180deg)",
+    opacity: 0.9,
+    borderRadius: "10px"
+  }}
+>
                 <source src="/demospanish1.mp3" />
               </audio>
             </div>
 
             <div style={audioBox}>
               <h3>English</h3>
-              <audio controls style={{ width: "100%" }}>
+              <audio
+  controls
+  style={{
+    width: "100%",
+    filter: "invert(1) hue-rotate(180deg)",
+    opacity: 0.9,
+    borderRadius: "10px"
+  }}
+>
                 <source src="/demoenglish1.mp3" />
               </audio>
             </div>
